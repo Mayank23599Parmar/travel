@@ -1,0 +1,181 @@
+.search-box-wrapper {
+    margin-top: 20px;
+    // .search-box-header {
+    //     margin-top: 30px;
+
+    //     @include mq("phone") {
+    //         width: 60%;
+    //     }
+
+    //     .seach-box-title {
+    //         text-align: center;
+    //         padding: 10px 20px;
+    //         font-family: $header_font_famity;
+    //         font-size: 25px;
+    //         position: relative;
+    //         text-transform: capitalize;
+    //         margin: 20px 0px;
+    //         h3 {
+    //             line-height: 1;
+    //             margin-bottom: 30px;
+    //             margin-top: 30px;
+    //             border: 1px solid #000;
+    //             position: relative;
+    //             text-transform: uppercase;
+    //             color: #000;
+    //             background: #fff;
+    //             padding: 10px 10px;
+    //             font-size: 22px;
+    //             max-width: 450px;
+    //             font-family: Montserrat;
+    //             font-weight: 400;
+    //             margin: 0px auto;
+    //             @include mq("phone") {
+    //                 font-size: 16px;
+    //             }
+    //             span {
+    //                 width: 100%;
+    //                 &::before {
+    //                     content: " ";
+    //                     position: absolute;
+    //                     right: -40px;
+    //                     height: 1px;
+    //                     width: 40px;
+    //                     background-color: #000;
+    //                     top: 50%;
+    //                     -moz-transform: translateY(-50%);
+    //                     -o-transform: translateY(-50%);
+    //                     -ms-transform: translateY(-50%);
+    //                     -webkit-transform: translateY(-50%);
+    //                     transform: translateY(-50%);
+    //                 }
+    //                 &::after {
+    //                     content: " ";
+    //                     position: absolute;
+    //                     left: -40px;
+    //                     height: 1px;
+    //                     width: 40px;
+    //                     background-color: #000;
+    //                     top: 50%;
+    //                     -moz-transform: translateY(-50%);
+    //                     -o-transform: translateY(-50%);
+    //                     -ms-transform: translateY(-50%);
+    //                     -webkit-transform: translateY(-50%);
+    //                     transform: translateY(-50%);
+    //                 }
+    //             }
+    //         }
+    //         @include mq("phone") {
+    //             font-size: 16px;
+    //         }
+    //         @include mq("lap") {
+    //             font-size: 16px;
+    //         }
+    //     }
+    // }
+    .seach-input-wrapper {
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
+        @include mq("phone") {
+            @include flex-direction(column);
+            top:80%;
+        }
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 450px;
+        padding: 25px 25px;
+        margin: 10px auto;
+        position: absolute;
+        top:88%;
+        /* z-index: 99999999 !important; */
+        background: white;
+        border: none;
+        border-radius: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        @include mq("phone"){
+            border-radius: 7px; 
+            width: 50%;
+        }
+        .seach-input {
+            input {
+                padding: 10px 17px;
+                font-size: 14px;
+                width: 250px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                outline: none;
+                font-family: $header_font_famity;
+                @include mq("phone") {
+                    padding: 1px 20px;
+                    font-size: 13px;
+                    width: 150px;
+                }
+            }
+        }
+        .seach-button {
+            @include mq("phone") {
+                margin-top: 10px;
+                width: 100%;
+               
+            }
+            button {
+                padding: 16px 33px;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                background: $button_background_color;
+                color: $button_font_color;
+                margin-left: 10px;
+                display: block;
+                font-family: $font-famity;
+                @include mq("phone") {
+                    font-size: 18px;
+                    width: 100%;
+                    margin: 0 auto;
+                    border-radius: 4px;
+                    padding: 4px 9px;
+                }
+            }
+        }
+    }
+}
+
+.top-location {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0px auto;
+    .location-images {
+        position: relative;
+        img {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            height: auto;
+            @include transform(scale(0.9));
+            &:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                @include transform(scale(1));
+            }
+        }
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            h4 {
+                color: $color_white;
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+    }
+}

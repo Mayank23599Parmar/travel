@@ -1,0 +1,113 @@
+.footer{
+    background: $footer_backround_color;
+    padding: 70px 30px;
+    .company-info{
+        .company-logo{
+            margin-bottom: 20px;
+        }
+        .company-about-us{
+            margin-bottom: 18px;
+            p{
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 0;
+                font-family: $font-famity;
+                color: $footer-font-color;
+                @include mq("phone"){
+                    font-size: 17px;
+                }
+            }
+        }
+        .company-social{
+            ul{
+                padding: 0;
+                list-style: none;
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    li{
+        a{
+            text-decoration: none;
+            color: $footer-font-color;
+            font-size: 20px;
+            transition: all .5s linear;
+            &:hover{
+                font-size: 22px;   
+            }
+        }
+    }
+            }
+
+        }
+    }
+    .site-navaigation{
+        h3{
+            color: $footer-font-color;
+            font-size: 30px;
+            font-family: $font-famity;
+           
+            @include mq("phone"){
+                font-size: 26px; 
+                margin: 20px 0px;  
+            }
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                display: block;
+                margin: 0 auto;
+                padding: 15px 20px;
+                position: relative;
+                &::after{ 
+                    content: "";
+
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    background: $footer-font-color;
+                    top: 100%;
+                    left: 0;
+                    transition: all .5s linear;
+
+                }
+                &:hover::after{
+                    content: "";
+                    position: absolute;
+             width: 25%;
+                }
+                a{
+                    color: $footer-font-color;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-family: $font-famity;
+                    @include mq("phone"){
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .copany-address{
+        h3{
+            color: $footer-font-color;
+            font-size: 30px;
+            font-family: $font-famity;
+            margin: 20px 0px;
+            @include mq("phone"){
+                font-size: 26px;   
+            } 
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 0;
+            font-family: $font-famity;
+            color: $footer-font-color;
+            @include mq("phone"){
+                font-size: 17px;
+            }
+        }
+    }
+}

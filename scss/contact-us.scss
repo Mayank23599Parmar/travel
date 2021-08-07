@@ -1,0 +1,49 @@
+.conatact-us {
+    .contact-header {
+        .contact-title {
+            text-align: center;
+            margin-top: 50px;
+            h2 {
+                color: $color_black;
+                font-size: 50px;
+                font-weight: 700;
+                position: relative;
+                padding-bottom: 30px;
+                font-family: $font-famity;
+
+                @include mq("phone") {
+                    font-size: 33px;
+                    font-weight: 500;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100px;
+                    height: 6px;
+                    background: $button_background_color;
+                    bottom: 0px;
+                    left: 50%;
+                    @include transform(translate(-50%, -50%));
+                }
+            }
+            .contact-discription {
+                text-align: center;
+                width: 50%;
+                margin: 0 auto;
+                @include mq("phone"){
+                    width: 100%;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 0;
+                    font-family: $font-famity;
+                    @include mq("phone"){
+                        font-size: 18px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.benifit-wrapper {
+    background:$section-background-color;
+    .benifit-content {
+        padding: 50px 50px;
+        .benifit-title {
+            margin-bottom: 40px;
+            h2 {
+                color: $color_black;
+                font-size: 50px;
+                font-weight: 700;
+                position: relative;
+                padding-bottom: 30px;
+                font-family: $font-famity;
+                @include mq("phone") {
+                    font-size: 33px;
+                    font-weight: 500;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100px;
+                    height: 6px;
+                    background: $button_background_color;
+                    bottom: 0px;
+                    left: 0px;
+                }
+            }
+        }
+        .benifit-discription {
+            margin-bottom: 40px;
+            p {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 0;
+                font-family: $font-famity;
+            }
+        }
+        .benifit-types {
+            .benifit-type-content {
+                margin-bottom: 20px;
+                .benifit-type-tile {
+                    margin-bottom: 20px;
+                    h4 {
+                        font-size: 22px;
+                        font-weight: 700;
+                        font-family: $font-famity;
+                        color: $color_black;
+                    }
+                }
+                .benifit-type-discription{
+                    p{
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-bottom: 0;
+                        font-family: $font-famity;
+                        color: $color_black;
+                    }
+                }
+            }
+        }
+    }
+    .benifity-images{
+        margin-top: 60px;
+        @include mq("phone"){
+            margin-top: 10px;
+        }
+        img{
+            max-width: 100%;
+            margin: 0 auto;
+    display: block;
+        }
+    }
+}

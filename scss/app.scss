@@ -1,0 +1,26 @@
+/*================ Common ================*/
+@import "mixin";
+@import "variable";
+@import "grid";
+@import "reset";
+/*================ vendors ================*/
+@import "./vendors/boostrap.scss";
+@import "./vendors/aosCss.scss";
+@import "./vendors/slick.scss";
+@import "./vendors/mignpop.scss";
+
+/*================ Header ================*/
+@import "header";
+@import "./bannerSlider.scss";
+@import "./seachInput.scss";
+@import "./special-offer.scss";
+@import "./banifit.scss";
+@import "./featurePlaces.scss";
+@import "./testimonial.scss";
+@import "./footer.scss";
+
+/*================ all place ================*/
+@import "./allPlaces.scss";
+@import "./packageDetail.scss";
+@import "./gallery.scss";
+@import "./contact-us.scss";

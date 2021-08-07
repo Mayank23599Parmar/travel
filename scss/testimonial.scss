@@ -1,0 +1,98 @@
+.testimonial-wrapper{
+ 
+    .testimonal-header{
+        text-align: center;
+        margin: 35px 0px;
+        padding: 25px 0px;
+        .testimonal-title{
+            h4{
+                color: $color_black;
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 1.3;
+                font-family: $font-famity;
+
+            @include mq("phone"){
+                font-size: 33px;
+            font-weight: 500; 
+            }
+            }
+            
+            position: relative;
+            padding-bottom: 30px;
+          
+    
+            &::after{
+                position: absolute;
+                content: "";
+                width: 200px;
+                height: 6px;
+                background:$button_background_color;
+                bottom: 0px;
+                left: 50%;
+                @include transform(translate(-50%,-50%));
+            }
+        }
+    }
+    .testimonal-slider{
+        margin-top: 50px;
+        position: relative;
+        .testimonial-arrow-prev{
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            left: 0px;
+            z-index: 9;
+            font-size: 50px;
+            color: $button_background_color;
+            cursor: pointer;
+           
+    
+          
+           }
+           .testimonial-arrow-next{
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            right: 0px;
+            z-index: 9;
+            font-size: 50px;
+            color: $button_background_color;
+            cursor: pointer;
+         
+       
+    
+           }
+        .testimonail-content{
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+            .testimonial-image{
+               img{
+                   width: 200px;
+                   height: 200px;
+                   border-radius: 50%;
+               }
+            }
+            .testimonal-message{
+                margin: 30px;
+                p{
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 0;
+                    font-family: $font-famity;
+                    text-align: center;
+                }
+                span{
+                    text-align: center;
+                    display: block;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-bottom: 0;
+                    font-family: $font-famity;
+                }
+            }
+        }
+    }
+}
