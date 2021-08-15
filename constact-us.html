@@ -2,124 +2,157 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assest/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/style.css">
+    <style>
+        .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(./assest/images/Preloader_7.gif) center no-repeat #fff;
+}
+  </style>
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <header class="header-wrapper">
         <div class="header-logo">
-          <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"
-              alt="company logo" /></a>
+            <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"
+                    alt="company logo" /></a>
         </div>
         <div class="header-menu">
-          <ul>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./galley.html">Gallery</a></li>
+                <li><a href="./all-places.html">Packages</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="./constact-us.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <header class="mobile-header-wrapper">
+        <div class="mobile-header-logo">
+            <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"
+                    alt="company logo" /></a>
+        </div>
+        <div class="mobile-header-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+    </header>
+    <div class="mobile-navigation">
+        <div class="mobile-header-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./galley.html">Gallery</a></li>
             <li><a href="./all-places.html">Packages</a></li>
             <li><a href="./about-us.html">About</a></li>
             <li><a href="./constact-us.html">Contact</a></li>
-          </ul>
-        </div>
-      </header>
-      <header class="mobile-header-wrapper">
-        <div class="mobile-header-logo">
-          <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"
-              alt="company logo" /></a>
-        </div>
-        <div class="mobile-header-menu">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-    
-      </header>
-      <div class="mobile-navigation">
-        <div class="mobile-header-close">
-          <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./galley.html">Gallery</a></li>
-          <li><a href="./all-places.html">Packages</a></li>
-          <li><a href="./about-us.html">About</a></li>
-          <li><a href="./constact-us.html">Contact</a></li>
         </ul>
-      </div>
-   <!-- hero image start -->
-   <div class="hero-images">
-    <div class="hero-text">
-        <h3>Contact us</h3>
-        <p>Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
-            from us.</p>
     </div>
-</div>
-<div class="conatact-us">
-    <div class="contact-header">
-        <div class="contact-title">
-            <h2>Get In Touch</h2>
-            <div class="contact-discription">
-                <p> Home is where your WiFi connects automatically. Here’s where ours does. Give us a call into our headquarters to say hi in person</p>
+    <!-- hero image start -->
+    <div class="hero-images" >
+      
+        <div class="hero-text" >
+            <h3 data-aos="fade-up">Contact us</h3>
+            <p data-aos="fade-up">   Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
+                from us.</p>
+        </div>
+    </div>
+    <div class="conatact-us">
+        <div class="contact-header">
+            <div class="contact-title">
+                <h2 data-aos="zoom-in">Get In Touch</h2>
+                <div class="contact-discription">
+                    <p data-aos="zoom-in"> Home is where your WiFi connects automatically. Here’s where ours does. Give us a call into our
+                        headquarters to say hi in person</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="contact-form mt-5">
-        <div class="container">
-            <form action="/action_page.php">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="form-group">
-                            <label for="first-name">First Name</label>
-                            <input type="text" class="form-control" id="email">
-                          </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="form-group">
-                            <label for="first-name">Last Name</label>
-                            <input type="text" class="form-control" id="email">
-                          </div>
+        <div class="contact-form mt-5">
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label for="first-name">Last Name</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
 
-                    </div>
-                   
+                        </div>
+
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="first-name">Email address:</label>
                                 <input type="email" class="form-control" id="email">
-                              </div>
+                            </div>
                         </div>
-                  
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="first-name">Phone Number</label>
-                            <input type="number" class="form-control" id="email">
-                          </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="first-name">Phone Number</label>
+                                <input type="number" class="form-control" id="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Comment:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" class="btn btn-primary p-3" value="Post Comment">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="contact-map">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="copany-address">
+                            <h3>Contact Info</h3>
+                            <p><span><i class="fa fa-map-marker" aria-hidden="true"></i> 184 Main Street East Perl Habour 8007</p>
+                            <p>184 Main Street East Perl Habour 8007</p>
+                            <p><span><i class="fa fa-clock-o"></i></span> Hour 9:00 to 7:00 Sunday 10:00 to 5:00</p>
+                            <p><span><i class="fa fa-envelope"></i></span> Travelpoint@gmail.com</p>
+                            <p><i class="fa fa-phone"></i> 64333333333</p>
+                            <p><i class="fa fa-phone"></i> 64333333333</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div id="map" style="width:100%;height:500px;background:grey"></div>
                     </div>
                 </div>
-                <div class="form-group">
-                  <label for="pwd">Comment:</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="form-group text-center">
-                   <input type="submit" class="btn btn-primary p-3" value="Post Comment" >
-                  </div>
-               
-              </form>
+            </div>
+
         </div>
-    </div>
-    <div class="contact-map">
-        <div id="map" style="width:100%;height:500px;background:grey"></div>
-    </div>
-</div>
-   <!-- footer start -->
-   <div class="footer">
+    </div><!-- footer start -->
+    <div class="footer" style="background-image: url(./assest/images/footer.png);">
      <div class="container">
-<div class="row">
+ <div class="row">
   <div class="col-md-4 col-sm-4">
     <div class="company-info">
       <div class="company-logo">
@@ -152,28 +185,38 @@
   <div class="col-md-4 col-sm-4">
     <div class="copany-address">
       <h3>Contact Info</h3>
-       <p>184 Main Street East Perl Habour 8007</p>
+       <p><span><i class="fa fa-map-marker" aria-hidden="true"></i> </span>184 Main Street East Perl Habour 8007</p>
        <p>184 Main Street East Perl Habour 8007</p>
        <p><i class="fa fa-phone"></i> 64333333333</p>
        <p><i class="fa fa-phone"></i> 64333333333</p>
     </div>
   </div>
-</div>
+ </div>
+ <div class="footer-botton">
+  <p class="text-center" style="color: white;">
+    © Viaje 2019 All rights reserved. Powered with <i class="fa fa-heart"></i> valcano bizz</p>
+ </div>
      </div>
    </div>
    <!-- footer end -->
-   <script>  
-    function myMap() {  
-    var mapOptions = {  
-        center: new google.maps.LatLng(51.5, -0.12),  
-        zoom: 10,  
-        mapTypeId: google.maps.MapTypeId.HYBRID  
-    }  
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
-    }  
-    </script>  
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> 
-   <script src="./assest/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script src="./assest/index.js"></script>
+    
 </body>
 
 </html>

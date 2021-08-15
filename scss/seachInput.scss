@@ -80,14 +80,14 @@
         @include align-items(center);
         @include mq("phone") {
             @include flex-direction(column);
-            top:80%;
+            top:73%;
         }
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         width: 450px;
         padding: 25px 25px;
         margin: 10px auto;
         position: absolute;
-        top:88%;
+        top:80%;
         /* z-index: 99999999 !important; */
         background: white;
         border: none;

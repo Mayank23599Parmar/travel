@@ -1,0 +1,56 @@
+.about-header {
+    margin: 25px;
+
+    .about-header-title {
+    text-align: center;
+        h2 {
+            color: $headeing-color;
+            font-size: 50px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 30px;
+            font-family: $heading-font;
+            @include mq("phone") {
+                font-size: 33px;
+                font-weight: 500;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 200px;
+                height: 3px;
+                background:$button_background_color;
+                bottom: 25px;
+                left: 50%;
+                @include transform(translate(-50%,-50%));
+            
+            }
+        }
+    }
+    .about-intro{
+        margin: 15px 0px;
+        font-family: $heading-font;
+        color: $headeing-color;
+        font-weight: 600;
+        font-size: 22px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 2px;
+            background:$button_background_color;
+            bottom: -3px;
+            left: 0px;
+
+        }
+
+    }
+    .about-discription{
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 0;
+        font-family: $font-famity;
+        color: $paragraph-color;
+    }
+}

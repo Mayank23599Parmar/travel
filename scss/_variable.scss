@@ -32,21 +32,26 @@ $row_hover_color: #f2f2f2;
 $table_border_color: #ddd;
 /*================ Header ================*/
 // $header_background: var(--header_background);
-$header_background_color:rgb(255, 210, 210);
-$header_font_famity:'Sans-serif';
-$header_color:#262625;
-$header_hover_color:#262625;
+$header_background_color:#fff;
+$header_font_famity:'Poppins', sans-serif;
+$header_color:white;
+$header_hover_color:white;
+$header_hover:#F3941E;
 
 /*================ button ================*/
-$button_background_color:blue;
+$button_background_color:#F3941E;
 $button_font_color:white;
 
-$font-famity:'Sans-serif';
+$font-famity:'Poppins', sans-serif;
 
 
 $section-background-color:#f4f8fb;
 
-$footer_backround_color:blue;
+$footer_backround_color:#6f6fd2;
 $footer-font-color:white;
 
 $all-place-hero-image-text:#fff;
+
+$headeing-color:#071C55;
+$heading-font:'Playfair Display', serif;
+$paragraph-color:#666;

@@ -4,12 +4,12 @@
             text-align: center;
             margin-top: 50px;
             h2 {
-                color: $color_black;
+                color: $headeing-color;
                 font-size: 50px;
                 font-weight: 700;
                 position: relative;
                 padding-bottom: 30px;
-                font-family: $font-famity;
+                font-family: $heading-font;
 
                 @include mq("phone") {
                     font-size: 33px;
@@ -19,9 +19,9 @@
                     position: absolute;
                     content: "";
                     width: 100px;
-                    height: 6px;
+                    height: 3px;
                     background: $button_background_color;
-                    bottom: 0px;
+                    bottom: 25px;
                     left: 50%;
                     @include transform(translate(-50%, -50%));
                 }
@@ -38,12 +38,21 @@
                     line-height: 30px;
                     margin-bottom: 0;
                     font-family: $font-famity;
+                    color: $paragraph-color;
                     @include mq("phone"){
                         font-size: 18px;
                     }
                     
                 }
             }
+        }
+    }
+    .contact-map{
+        margin: 25px 0;
+        .copany-address{
+            margin: 0 auto;
+            max-width: 300px;
+            display: block;
         }
     }
 }

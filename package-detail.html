@@ -12,9 +12,23 @@
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assest/style.css">
+    <style>
+      .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: url(./assest/images/Preloader_7.gif) center no-repeat #fff;
+}
+</style>
 </head>
 
 <body>
+  <div class="se-pre-con"></div>
     <!-- header start -->
     <header class="header-wrapper">
       <div class="header-logo">
@@ -61,7 +75,7 @@
                 from us.</p>
         </div>
     </div>
-<div class="container-fluid">
+<div class="container">
     <div class="package-detail">
         <div class="package-header">
         <div class="package-title-wrapper">

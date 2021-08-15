@@ -6,11 +6,11 @@
         padding: 25px 0px;
         .testimonal-title{
             h4{
-                color: $color_black;
+                color: $headeing-color;
                 font-size: 50px;
                 font-weight: 700;
                 line-height: 1.3;
-                font-family: $font-famity;
+                font-family: $heading-font;
 
             @include mq("phone"){
                 font-size: 33px;
@@ -26,9 +26,9 @@
                 position: absolute;
                 content: "";
                 width: 200px;
-                height: 6px;
+                height: 3px;
                 background:$button_background_color;
-                bottom: 0px;
+                bottom: 25px;
                 left: 50%;
                 @include transform(translate(-50%,-50%));
             }
@@ -83,6 +83,7 @@
                     margin-bottom: 0;
                     font-family: $font-famity;
                     text-align: center;
+                    color: $paragraph-color;
                 }
                 span{
                     text-align: center;
@@ -91,6 +92,7 @@
                     line-height: 30px;
                     margin-bottom: 0;
                     font-family: $font-famity;
+                    color: $paragraph-color;
                 }
             }
         }

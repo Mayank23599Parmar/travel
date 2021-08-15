@@ -4,12 +4,12 @@
         .package-title-wrapper {
             margin-bottom: 40px;
             h2 {
-                color: $color_black;
+                color: $headeing-color;
                 font-size: 50px;
                 font-weight: 700;
                 position: relative;
                 padding-bottom: 30px;
-                font-family: $font-famity;
+                font-family: $heading-font;
                 @include mq("phone") {
                     font-size: 33px;
                     font-weight: 500;
@@ -18,9 +18,9 @@
                     position: absolute;
                     content: "";
                     width: 100px;
-                    height: 6px;
+                    height: 3px;
                     background: $button_background_color;
-                    bottom: 0px;
+                    bottom: 25px;
                     left: 0px;
                 }
             }
@@ -53,11 +53,11 @@
     .package-discription {
         .discription-title {
             h2 {
-                color: $color_black;
+                color: $headeing-color;
                 font-size: 40px;
                 font-weight: 500;
                 position: relative;
-                font-family: $font-famity;
+                font-family: $heading-font;
                 @include mq("phone") {
                     font-size: 23px;
                     font-weight: 300;
@@ -75,11 +75,11 @@
         .discription-list {
             margin-top: 20px;
             h3 {
-                color: $color_black;
+                color: $paragraph-color;
                 font-size: 40px;
                 font-weight: 400;
                 position: relative;
-                font-family: $font-famity;
+                font-family: $heading-font;
                 @include mq("phone") {
                     font-size: 43px;
                     font-weight: 300;
@@ -93,6 +93,7 @@
                     font-size: 20px;
                     line-height: 30px;
                     font-family: $font-famity;
+                    color: $paragraph-color;
                 }
             }
         }

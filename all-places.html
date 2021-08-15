@@ -12,9 +12,23 @@
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assest/style.css">
+    <style>
+      .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: url(./assest/images/Preloader_7.gif) center no-repeat #fff;
+}
+</style>
 </head>
 
 <body>
+  <div class="se-pre-con"></div>
     <!-- header start -->
     <header class="header-wrapper">
       <div class="header-logo">
@@ -56,8 +70,8 @@
     <!-- hero image start -->
     <div class="hero-images">
         <div class="hero-text">
-            <h3>Let's Make Your Best Trip Ever</h3>
-            <p>Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
+            <h3 data-aos="fade-up">Let's Make Your Best Trip Ever</h3>
+            <p data-aos="fade-up"> Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
                 from us.</p>
         </div>
     </div>
@@ -68,7 +82,7 @@
               
                     <div class="col-sm-10">
                         <div class="all-place-header-title">
-                            <h2><span>Our Best Places</span></h2>
+                            <h2 data-aos="fade-up"><span>Our Best Places</span></h2>
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -93,7 +107,7 @@
                 <div class="row sort-results">
                     
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="special-place-wrapper" data-order="1">
+                        <div class="special-place-wrapper" data-order="1" data-aos="fade-up">
                           <a href="./package-detail.html">
                             <div class="special-place-image">
                                 <img src="./assest/images/special.webp" />
@@ -116,7 +130,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="special-place-wrapper" data-order="2">
+                        <div class="special-place-wrapper" data-order="2" data-aos="fade-up">
                           <a href="./package-detail.html">
                             <div class="special-place-image">
                                 <img src="./assest/images/special.webp" />
@@ -139,7 +153,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="special-place-wrapper" data-order="3">
+                        <div class="special-place-wrapper" data-order="3" data-aos="fade-up">
                           <a href="./package-detail.html">
                             <div class="special-place-image">
                                 <img src="./assest/images/special.webp" />
@@ -162,7 +176,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="special-place-wrapper" data-order="4">
+                        <div class="special-place-wrapper" data-order="4" data-aos="fade-up">
                           <a href="./package-detail.html">
                             <div class="special-place-image">
                                 <img src="./assest/images/special.webp" />
@@ -185,7 +199,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="special-place-wrapper" data-order="5">
+                        <div class="special-place-wrapper" data-order="5" data-aos="fade-up">
                           <a href="./package-detail.html">
                             <div class="special-place-image">
                                 <img src="./assest/images/location.jpg" />
@@ -207,7 +221,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="special-place-wrapper" data-order="6">
+                        <div class="special-place-wrapper" data-order="6" data-aos="fade-up">
                           <a href="./package-detail.html">
                             <div class="special-place-image">
                                 <img src="./assest/images/special.webp" />
@@ -233,155 +247,215 @@
             </div>
             </div>
         </div>
-          <!-- About start -->
-  <div class="benifit-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="com-md-6 col-sm-6">
-          <div class="benifit-content">
-            <div class="benifit-title">
-              <h2><span>About Us</span></h2>
+          <!-- benifit start -->
+    <div class="benifit-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="com-md-6 col-sm-6">
+            <div class="benifit-content">
+              <div class="benifit-title">
+               <h2 data-aos="fade-up"><span>Our Benefit</span></h2>
+              </div>
+              <div class="benifit-discription">
+                <p data-aos="fade-up">
+                  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                </p>
+              </div>
+              <div class="benifit-types">
+                <div class="row">
+                  <div class="com-md-6 col-sm-6">
+                    <div class="benifit-type-content">
+                      <div class="benifit-type-tile">
+                        <h4 data-aos="fade-up"><span>Personal Schedule</span></h4>
+                      </div>
+                      <div class="benifit-type-discription">
+                        <p data-aos="fade-up">
+                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="com-md-6 col-sm-6">
+                    <div class="benifit-type-content">
+                      <div class="benifit-type-tile">
+                        <h4 data-aos="fade-up"><span> Luxury Interiors</span></h4>
+                      </div>
+                      <div class="benifit-type-discription">
+                        <p data-aos="fade-up">
+                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="com-md-6 col-sm-6">
+                    <div class="benifit-type-content">
+                      <div class="benifit-type-tile">
+                        <h4 data-aos="fade-up"><span>Professional Crew</span></h4>
+                      </div>
+                      <div class="benifit-type-discription">
+                        <p data-aos="fade-up">
+                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="com-md-6 col-sm-6">
+                    <div class="benifit-type-content">
+                      <div class="benifit-type-tile">
+                        <h4 data-aos="fade-up"><span> Safe & Confidential</span></h4>
+                      </div>
+                      <div class="benifit-type-discription">
+                        <p data-aos="fade-up">
+                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="benifit-discription">
-              <p>
-                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
-              </p>
-            </div>
-          
+          </div>
+          <div class="com-md-6 col-sm-6">
+           <div class="row">
+             <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="benifity-images" data-aos="fade-up">
+                <img src="./assest/images/benifit.webp">
+              </div>
+             </div>
+             <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="benifity-images" data-aos="fade-up">
+                <img src="./assest/images/benifit.webp">
+              </div>
+             </div>
+             <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="benifity-images" data-aos="fade-up">
+                <img src="./assest/images/benifit.webp">
+              </div>
+             </div>
+             <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade-up">
+              <div class="benifity-images">
+                <img src="./assest/images/benifit.webp">
+              </div>
+             </div>
+           </div>
           </div>
         </div>
-        <div class="com-md-6 col-sm-6">
-         <div class="row">
-           <div class="col-sm-6 col-md-6 col-lg-6">
-            <div class="benifity-images">
-              <img src="./assest/images/benifit.webp">
-            </div>
-           </div>
-           <div class="col-sm-6 col-md-6 col-lg-6">
-            <div class="benifity-images">
-              <img src="./assest/images/benifit.webp">
-            </div>
-           </div>
-           <div class="col-sm-6 col-md-6 col-lg-6">
-            <div class="benifity-images">
-              <img src="./assest/images/benifit.webp">
-            </div>
-           </div>
-           <div class="col-sm-6 col-md-6 col-lg-6">
-            <div class="benifity-images">
-              <img src="./assest/images/benifit.webp">
-            </div>
-           </div>
-         </div>
+      </div>
+    </div>
+    <!-- benifit end -->
+  <!-- testimonial start -->
+<div class="testimonial-wrapper">
+  <div class="container">
+    <div class="testimonal-header">
+      <div class="testimonal-title" >
+        <h4  data-aos="fade-up">WHAT OUR CLIENTS SAY ABOUT US</h4>
+      </div>
+    </div>
+    <div class="testimonal-slider">
+      <div class="testimonail-content">
+        <div class="testimonial-image">
+          <img src="./assest/images/testimonail.webp.webp"/>
+        </div>
+        <div class="testimonal-message">
+          <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
+          <span>-mayank parmar</span>
+        </div>
+      </div>
+      <div class="testimonail-content">
+        <div class="testimonial-image">
+          <img src="./assest/images/testimonail.webp.webp"/>
+        </div>
+        <div class="testimonal-message">
+          <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
+          <span>-mayank parmar</span>
+        </div>
+      </div>
+      <div class="testimonail-content">
+        <div class="testimonial-image">
+          <img src="./assest/images/testimonail.webp.webp"/>
+        </div>
+        <div class="testimonal-message">
+          <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
+          <span>-mayank parmar</span>
+        </div>
+      </div>
+      <div class="testimonail-content">
+        <div class="testimonial-image">
+          <img src="./assest/images/testimonail.webp.webp"/>
+        </div>
+        <div class="testimonal-message">
+          <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
+          <span>-mayank parmar</span>
+        </div>
+      </div>
+      <div class="testimonail-content">
+        <div class="testimonial-image">
+          <img src="./assest/images/testimonail.webp.webp"/>
+        </div>
+        <div class="testimonal-message">
+          <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
+          <span>-mayank parmar</span>
         </div>
       </div>
     </div>
   </div>
-  <!-- About End -->
-  <!-- testimonial start -->
-<div class="testimonial-wrapper">
-<div class="container">
-  <div class="testimonal-header">
-    <div class="testimonal-title">
-      <h4>WHAT OUR CLIENTS SAY ABOUT US</h4>
-    </div>
   </div>
-  <div class="testimonal-slider">
-    <div class="testimonail-content">
-      <div class="testimonial-image">
-        <img src="./assest/images/testimonail.webp.webp"/>
-      </div>
-      <div class="testimonal-message">
-        <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
-        <span>-mayank parmar</span>
-      </div>
-    </div>
-    <div class="testimonail-content">
-      <div class="testimonial-image">
-        <img src="./assest/images/testimonail.webp.webp"/>
-      </div>
-      <div class="testimonal-message">
-        <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
-        <span>-mayank parmar</span>
-      </div>
-    </div>
-    <div class="testimonail-content">
-      <div class="testimonial-image">
-        <img src="./assest/images/testimonail.webp.webp"/>
-      </div>
-      <div class="testimonal-message">
-        <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
-        <span>-mayank parmar</span>
-      </div>
-    </div>
-    <div class="testimonail-content">
-      <div class="testimonial-image">
-        <img src="./assest/images/testimonail.webp.webp"/>
-      </div>
-      <div class="testimonal-message">
-        <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
-        <span>-mayank parmar</span>
-      </div>
-    </div>
-    <div class="testimonail-content">
-      <div class="testimonial-image">
-        <img src="./assest/images/testimonail.webp.webp"/>
-      </div>
-      <div class="testimonal-message">
-        <p>"Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec."</p>
-        <span>-mayank parmar</span>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-   <!-- testimonial end -->
-         <!-- footer start -->
-   <div class="footer">
-    <div class="container">
+     <!-- testimonial end -->
+      <!-- footer start -->
+ <div class="footer" style="background-image: url(./assest/images/footer.png);">
+  <div class="container">
 <div class="row">
- <div class="col-md-4 col-sm-4">
-   <div class="company-info">
-     <div class="company-logo">
-       <img src="./assest/images/company-footer-logo.png" class="img-fluid"/>
-     </div>
-     <div class="company-about-us">
-      <p>Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
-     </div>
-     <div class="company-social">
-       <ul>
-         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-       </ul>
-     </div>
+<div class="col-md-4 col-sm-4">
+ <div class="company-info">
+   <div class="company-logo">
+     <img src="./assest/images/company-footer-logo.png" class="img-fluid"/>
    </div>
- </div>
- <div class="col-md-4 col-sm-4">
-   <div class="site-navaigation">
-     <h3>Navogation</h3>
+   <div class="company-about-us">
+    <p>Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+   </div>
+   <div class="company-social">
      <ul>
-       <li><a href="">home </a></li>
-       <li><a href="">about</a></li>
-       <li><a href="">contact</a></li>
-       <li><a href="">package</a></li>
-       <li><a href="">Gallery</a></li>
+       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fa fa-instagram"></i></a></li>
      </ul>
    </div>
  </div>
- <div class="col-md-4 col-sm-4">
-   <div class="copany-address">
-     <h3>Contact Info</h3>
-      <p>184 Main Street East Perl Habour 8007</p>
-      <p>184 Main Street East Perl Habour 8007</p>
-      <p><i class="fa fa-phone"></i> 64333333333</p>
-      <p><i class="fa fa-phone"></i> 64333333333</p>
-   </div>
+</div>
+<div class="col-md-4 col-sm-4">
+ <div class="site-navaigation">
+   <h3>Navogation</h3>
+   <ul>
+     <li><a href="">home </a></li>
+     <li><a href="">about</a></li>
+     <li><a href="">contact</a></li>
+     <li><a href="">package</a></li>
+     <li><a href="">Gallery</a></li>
+   </ul>
  </div>
 </div>
-    </div>
+<div class="col-md-4 col-sm-4">
+ <div class="copany-address">
+   <h3>Contact Info</h3>
+    <p><span><i class="fa fa-map-marker" aria-hidden="true"></i> </span>184 Main Street East Perl Habour 8007</p>
+    <p>184 Main Street East Perl Habour 8007</p>
+    <p><i class="fa fa-phone"></i> 64333333333</p>
+    <p><i class="fa fa-phone"></i> 64333333333</p>
+ </div>
+</div>
+</div>
+<div class="footer-botton">
+<p class="text-center" style="color: white;">
+ © Viaje 2019 All rights reserved. Powered with <i class="fa fa-heart"></i> valcano bizz</p>
+</div>
   </div>
-  <!-- footer end -->
+</div>
+<!-- footer end -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+ 
 
     <script src="./assest/index.js"></script>
 </body>

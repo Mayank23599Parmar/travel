@@ -1,4 +1,9 @@
 .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background-color 0.2s linear;
     @include flexbox;
     @include flex-direction(row);
     @include justify-content(space-around);
@@ -6,10 +11,11 @@
     @include mq("phone") {
         display: none;
     }
-    background-color: $header_background_color;
+    // background-color: $header_background_color;
     width: 100%;
     height: 80px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   
     .header-logo {
         img {
             max-width: 100%;
@@ -34,7 +40,7 @@
                     content: "";
                     width: 0;
                     height: 1px;
-                    background: $header_hover_color;
+                    background: $header_hover;
                     bottom: -10px;
                     @include transition(all 0.5s);
                     left: 0;
@@ -51,18 +57,73 @@
                     color: $header_color;
                     font-weight: 500;
                     font-family: $header_font_famity;
+                    &:hover{
+                        color: $header_hover;
+                    }
                 }
             }
         }
     }
 }
+.sticky-header{
+    transition: background-color 0.2s linear;
+    background-color:$header_background_color ;
+    .header-menu {
+        ul {
+            @include flexbox;
+            flex-flow: nowrap;
+            @include flex-direction(row);
+            @include justify-content(center);
+            @include align-items(center);
+            transition: 0.5s;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    background: $header_hover;
+                    bottom: -10px;
+                    @include transition(all 0.5s);
+                    left: 0;
+                }
+                &:hover::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                }
+                a {
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 500;
+                    font-family: $header_font_famity;
+                    &:hover{
+                        color: $header_hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .mobile-header-wrapper {
     @include mq("phone") {
+        transition: background-color 0.2s linear;
         display: flex;
-        background: $header_background_color;
         height: 80px;
         @include justify-content(space-between);
         @include align-items(center);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
     }
     .mobile-header-logo {
         @include mq("phone") {
@@ -70,6 +131,7 @@
         }
     }
     .mobile-header-menu {
+        color: $button_background_color;
         @include mq("phone") {
             margin-right: 20px;
             font-size: 35px;
@@ -77,6 +139,10 @@
     }
     display: none;
     position: relative;
+}
+.mobole-sticky{
+    transition: background-color 0.2s linear;
+    background-color: #fff;
 }
 .mobile-navigation {
     display: none;
@@ -97,6 +163,10 @@
             float: right;
             padding: 25px;
             font-size: 30px;
+            color: $button_background_color;
+            &:hover{
+                color: red;
+            }
         }
         ul {
             padding: 150px 0px;
@@ -108,7 +178,7 @@
                     content: "";
                     width: 0;
                     height: 1px;
-                    background: $header_hover_color;
+                    background:  $header_hover;
                     bottom: -10px;
                     @include transition(all 0.5s);
                     left: 0;
@@ -122,10 +192,13 @@
                     padding: 10px 20px;
                     text-transform: uppercase;
                     text-decoration: none;
-                    color: $header_color;
+                    color: black;
                     font-weight: 400;
                     font-size: 30px;
                     font-family: $header_font_famity;
+                    &:hover{
+                        color: $header_hover;
+                    }
                 }
             }
         }

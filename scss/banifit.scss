@@ -1,16 +1,18 @@
 .benifit-wrapper {
-    background:$section-background-color;
+    background: $section-background-color;
     .benifit-content {
         padding: 50px 50px;
+        // box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        margin: 20px 0px;
         .benifit-title {
             margin-bottom: 40px;
             h2 {
-                color: $color_black;
+                color: $headeing-color;
                 font-size: 50px;
                 font-weight: 700;
                 position: relative;
                 padding-bottom: 30px;
-                font-family: $font-famity;
+                font-family: $heading-font;
                 @include mq("phone") {
                     font-size: 33px;
                     font-weight: 500;
@@ -19,9 +21,9 @@
                     position: absolute;
                     content: "";
                     width: 100px;
-                    height: 6px;
+                    height: 3px;
                     background: $button_background_color;
-                    bottom: 0px;
+                    bottom: 25px;
                     left: 0px;
                 }
             }
@@ -33,6 +35,7 @@
                 line-height: 30px;
                 margin-bottom: 0;
                 font-family: $font-famity;
+                color: $paragraph-color;
             }
         }
         .benifit-types {
@@ -44,30 +47,42 @@
                         font-size: 22px;
                         font-weight: 700;
                         font-family: $font-famity;
-                        color: $color_black;
+                        color: $paragraph-color;
                     }
                 }
-                .benifit-type-discription{
-                    p{
+                .benifit-type-discription {
+                    p {
                         font-size: 18px;
                         line-height: 26px;
                         margin-bottom: 0;
                         font-family: $font-famity;
-                        color: $color_black;
+                        color: $paragraph-color;
                     }
                 }
             }
         }
     }
-    .benifity-images{
-        margin-top: 60px;
-        @include mq("phone"){
+    .benifity-images {
+        margin-top: 20px;
+        overflow: hidden;
+        width: 280;
+        height: auto;
+        @include mq("phone") {
             margin-top: 10px;
         }
-        img{
+        img {
             max-width: 100%;
             margin: 0 auto;
-    display: block;
+            display: block;
+            border-radius: 15px;
+            transform-origin: 50% 65%;
+            transition: transform 5s, filter 3s ease-in-out;
+            filter: brightness(150%);
+        }
+        &:hover img {
+            filter: brightness(100%);
+            transform: scale(3);
+            border-radius: 15px;
         }
     }
 }
