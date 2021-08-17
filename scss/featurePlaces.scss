@@ -7,7 +7,6 @@
             font-size: 50px;
             font-weight: 700;
             position: relative;
-            padding-bottom: 30px;
             font-family: $heading-font;
 
             @include mq("phone") {
@@ -20,13 +19,13 @@
                 width: 100px;
                 height: 3px;
                 background: $button_background_color;
-                bottom: 25px;
+                top: 100%;
                 left: 50%;
                 @include transform(translate(-50%, -50%));
             }
         }
         .feature-placesdiscription {
-            margin-top: 30px;
+            margin-bottom: 50px;
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 0;

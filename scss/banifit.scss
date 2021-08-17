@@ -2,16 +2,12 @@
     background: $section-background-color;
     .benifit-content {
         padding: 50px 50px;
-        // box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-        margin: 20px 0px;
         .benifit-title {
-            margin-bottom: 40px;
             h2 {
                 color: $headeing-color;
                 font-size: 50px;
                 font-weight: 700;
                 position: relative;
-                padding-bottom: 30px;
                 font-family: $heading-font;
                 @include mq("phone") {
                     font-size: 33px;
@@ -23,13 +19,13 @@
                     width: 100px;
                     height: 3px;
                     background: $button_background_color;
-                    bottom: 25px;
+                    top: 100%;
                     left: 0px;
                 }
             }
         }
         .benifit-discription {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             p {
                 font-size: 20px;
                 line-height: 30px;
@@ -74,15 +70,15 @@
             max-width: 100%;
             margin: 0 auto;
             display: block;
-            border-radius: 15px;
+           
             transform-origin: 50% 65%;
             transition: transform 5s, filter 3s ease-in-out;
             filter: brightness(150%);
         }
         &:hover img {
             filter: brightness(100%);
-            transform: scale(3);
-            border-radius: 15px;
+            transform: scale(1.5);
+
         }
     }
 }
