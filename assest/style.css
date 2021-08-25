@@ -12227,7 +12227,8 @@ img.mfp-img {
             color: #F3941E; }
 
 .benifit-wrapper {
-  background: #f4f8fb; }
+  background: #f4f8fb;
+  margin-top: 50px; }
   .benifit-wrapper .benifit-content {
     padding: 50px 50px; }
     .benifit-wrapper .benifit-content .benifit-title h2 {
